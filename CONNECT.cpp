@@ -8,12 +8,13 @@ bool visited[100000];
 
 void bfs(int s)
 {
-    int cnt = 0;
     queue<int> q;
     q.push(s);
     visited[s] = true;
+
     vector<int> node;
     node.push_back(s);
+
     while(q.size())
     {
         int u = q.front();
@@ -46,7 +47,6 @@ void bfs(int s)
         for(int v: node)
             result.push_back(v);
     }
-
 }
 
 int main()
