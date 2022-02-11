@@ -42,6 +42,6 @@ int main()
     //     cout << "No";
 
     cout << ( visited[k] ? "Yes" : "No");
-
+    
     return 0;
-} 
+}
