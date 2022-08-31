@@ -64,3 +64,63 @@ int main()
 
     return 0;
 }
+
+// #include <bits/stdc++.h>
+// #define pb push_back
+// #define ll long long
+
+// using namespace std;
+// const int maxn = 107;
+// int n, s, t, a[maxn][maxn];
+// bool vis[maxn];
+
+// vector<vector<int>> ans;
+// vector<int> path;
+
+// void dfs(int u)
+// {
+//     path.pb(u);
+//     if(u == t)
+//     {
+//         ans.pb(path);
+//         path.pop_back();
+//         return;
+//     }
+
+//     for(int v = 1; v <= n; v++)
+//         if(!vis[v] && a[u][v])
+//             {
+//                 vis[v] = 1;
+//                 dfs(v);
+//                 vis[v] = 0;
+//             }
+//     path.pop_back();
+// }
+
+// int main()
+// {
+// 	ios_base::sync_with_stdio(false);
+// 	cin.tie(NULL);
+
+// 	freopen("AIR.inp", "r", stdin);
+// 	freopen("AIR.out", "w", stdout);
+
+//     cin >> n >> s >> t;
+
+//     for(int i = 1; i <= n; i++)
+//         for(int j = 1; j <= n; j++)
+//             cin>>a[i][j];
+
+//     vis[s] = 1;
+//     dfs(s);
+
+//     for(auto i: ans)
+//     {
+//         for(auto j: i)
+//             cout<<j<<" ";
+//         cout<<"\n";
+//     }
+
+//     cout << ans.size();
+// 	return 0;
+// }
